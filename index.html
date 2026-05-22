@@ -497,9 +497,9 @@ footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:br
   /* FOOTER */
   footer{padding:2rem var(--space);padding-bottom:calc(2rem + env(safe-area-inset-bottom,0px));gap:1.25rem;justify-content:center;text-align:center;flex-direction:column}
   footer span{font-size:.72rem;color:var(--fg-soft)}
-  .footer-social{justify-content:center;gap:1rem;margin-top:.5rem}
-  .footer-social a{width:48px;height:48px}
-  .footer-social svg{width:28px;height:28px}
+  .footer-social{justify-content:space-evenly;gap:0;margin-top:.5rem;width:100%}
+  .footer-social a{width:44px;height:44px}
+  .footer-social svg{width:24px;height:24px}
 
   /* GLOBAL LABELS — reduce letter-spacing on mobile */
   .section-label,.edu-heading,.format-label{letter-spacing:.1em}
@@ -546,7 +546,7 @@ footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:br
     <a href="#about" data-i18n="nav.about">Обо мне</a>
     <a href="#education" data-i18n="nav.education">Образование</a>
     <a href="#format" data-i18n="nav.pricing">Стоимость</a>
-    <a href="#write" class="nav-cta" data-i18n="nav.cta">Хочешь поговорить?</a>
+    <a href="#write" class="nav-cta" data-i18n="nav.cta">Хотите поговорить?</a>
     <div class="nav-lang nav-lang-mobile" data-lang-group>
       <button data-lang="ru" class="active">RU</button>
       <button data-lang="fr">FR</button>
@@ -568,7 +568,7 @@ footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:br
   <h1 data-i18n="hero.title">Бывает, что внутри — <em>тихо</em>, а на душе — <em>тяжело</em></h1>
   <p class="hero-sub" data-i18n="hero.sub">Я помогаю найти слова для того, что трудно сказать, и опору — чтобы с этим жить</p>
   <a href="#write" class="hero-cta" data-i18n="hero.cta">
-    Хочешь поговорить?
+    Хотите поговорить?
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </a>
 </section>
@@ -586,7 +586,7 @@ footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:br
       </div>
       <div class="method-card reveal">
         <div class="method-name" data-i18n="approach.psycho.name">Психоанализ</div>
-        <p class="method-desc" data-i18n="approach.psycho.desc">Иногда боль не уходит, сколько ни стараешься. Как будто что-то тянет назад — но непонятно, что именно. Психоанализ помогает услышать то, что трудно услышать самому: где началось, почему повторяется, и как это — наконец — отпустить.</p>
+        <p class="method-desc" data-i18n="approach.psycho.desc">Иногда боль не уходит, как ни стараться. Как будто что-то тянет назад — но непонятно, что именно. Психоанализ помогает услышать то, что трудно услышать самому: где началось, почему повторяется, и как это — наконец — отпустить.</p>
       </div>
     </div>
   </div>
@@ -610,7 +610,7 @@ footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:br
       <h2 class="about-name" data-i18n="about.name">Артём Бендер</h2>
       <p class="section-text" data-i18n="about.p1">Мой путь начался в Москве — с богословия и вопросов о смысле. Потом — Париж, Монпелье, клиническая психология и психоанализ.</p>
       <p class="section-text" data-i18n="about.p2">Я учился понимать человека и как учёный, и как тот, кто верит, что за каждой болью — история, достойная внимания.</p>
-      <p class="section-text" data-i18n="about.p3">С 2022 года я рядом с людьми, которые решили, что хватит справляться одному.</p>
+      <p class="section-text" data-i18n="about.p3">С 2022 года я рядом с людьми, которые решили, что хватит справляться в одиночку.</p>
     </div>
     <div class="about-photo reveal">
       <div class="photo-placeholder">
@@ -670,9 +670,9 @@ footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:br
 </section>
 
 <section id="write" class="final-cta">
-  <h2 data-i18n="cta.title">Решили, что <em>хватит</em> справляться одному?</h2>
+  <h2 data-i18n="cta.title">Решили, что <em>хватит</em> справляться в одиночку?</h2>
   <a href="mailto:artemiybender@gmail.com" class="final-btn" data-i18n="cta.btn">
-    Хочешь поговорить?
+    Хотите поговорить?
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
   </a>
 </section>
@@ -715,11 +715,11 @@ const T={
     'nav.about':'Обо мне',
     'nav.education':'Образование',
     'nav.pricing':'Стоимость',
-    'nav.cta':'Хочешь поговорить?',
+    'nav.cta':'Хотите поговорить?',
     'hero.label':'Психолог · Онлайн и в Париже',
     'hero.title':'Бывает, что внутри — <em>тихо</em>, а на душе — <em>тяжело</em>',
     'hero.sub':'Я помогаю найти слова для того, что трудно сказать, и опору — чтобы с этим жить',
-    'hero.cta':'Хочешь поговорить?',
+    'hero.cta':'Хотите поговорить?',
     'approach.label':'Подход',
     'approach.title':'Каждый человек — не набор симптомов, а <em>история</em>',
     'approach.p1':'Я работаю так, чтобы вы чувствовали: здесь можно быть собой — без оценки, без спешки.',
@@ -727,7 +727,7 @@ const T={
     'approach.cbt.name':'Когнитивная терапия',
     'approach.cbt.desc':'Когда мысли не дают покоя — крутятся, пугают, заставляют сомневаться в себе — когнитивная терапия помогает разглядеть: какие из них — правда, а какие — привычка тревожиться. Не «думать позитивно», а замечать, что реально, а что — шум.',
     'approach.psycho.name':'Психоанализ',
-    'approach.psycho.desc':'Иногда боль не уходит, сколько ни стараешься. Как будто что-то тянет назад — но непонятно, что именно. Психоанализ помогает услышать то, что трудно услышать самому: где началось, почему повторяется, и как это — наконец — отпустить.',
+    'approach.psycho.desc':'Иногда боль не уходит, как ни стараться. Как будто что-то тянет назад — но непонятно, что именно. Психоанализ помогает услышать то, что трудно услышать самому: где началось, почему повторяется, и как это — наконец — отпустить.',
     'issues.label':'С чем работаю',
     'issues.title':'С тем, что трудно <em>назвать</em>',
     'issues.1':'Когда прошлое не отпускает',
@@ -738,7 +738,7 @@ const T={
     'about.name':'Артём Бендер',
     'about.p1':'Мой путь начался в Москве — с богословия и вопросов о смысле. Потом — Париж, Монпелье, клиническая психология и психоанализ.',
     'about.p2':'Я учился понимать человека и как учёный, и как тот, кто верит, что за каждой болью — история, достойная внимания.',
-    'about.p3':'С 2022 года я рядом с людьми, которые решили, что хватит справляться одному.',
+    'about.p3':'С 2022 года я рядом с людьми, которые решили, что хватит справляться в одиночку.',
     'about.photo':'Артём Бендер',
     'education.label':'Образование',
     'edu.paris8.degree':'магистратура по психологии · 2 года',
@@ -756,8 +756,8 @@ const T={
     'format.offline':'Очно',
     'format.offline.value':'Париж',
     'format.offline.note':'И пригороды',
-    'cta.title':'Решили, что <em>хватит</em> справляться одному?',
-    'cta.btn':'Хочешь поговорить?',
+    'cta.title':'Решили, что <em>хватит</em> справляться в одиночку?',
+    'cta.btn':'Хотите поговорить?',
     'footer.copy':'© Артём Бендер · artem-bender.fr',
   },
   fr:{
