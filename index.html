@@ -33,6 +33,8 @@ body{
   line-height:1.65;
   -webkit-font-smoothing:antialiased;
   overflow-x:hidden;
+  min-height:100vh;min-height:100svh;
+  display:flex;flex-direction:column;
 }
 
 /* === NAV === */
@@ -99,7 +101,7 @@ nav.scrolled{padding:.75rem 2.5rem;box-shadow:0 1px 20px rgba(0,0,0,.04)}
 
 /* === HERO === */
 .hero{
-  min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;
+  min-height:100vh;min-height:100svh;display:flex;flex-direction:column;
   justify-content:center;align-items:center;
   padding:var(--space-lg) var(--space);
   text-align:center;
@@ -310,9 +312,11 @@ section{
 /* === FOOTER === */
 footer{
   padding:3rem var(--space);
+  padding-bottom:calc(3rem + env(safe-area-inset-bottom,0px));
   border-top:1px solid rgba(0,0,0,.06);
   display:flex;justify-content:space-between;align-items:center;
   flex-wrap:wrap;gap:1rem;
+  margin-top:auto;
 }
 footer span{font-size:.75rem;color:var(--fg-muted)}
 footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:break-all}
