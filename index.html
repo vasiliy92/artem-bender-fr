@@ -74,11 +74,12 @@ nav.scrolled{padding:.75rem 2.5rem;box-shadow:0 1px 20px rgba(0,0,0,.04)}
 .nav-links a:hover::after{width:100%}
 .nav-cta{
   font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;
-  padding:.65rem 1.5rem;border-radius:var(--r-sm);
-  background:var(--accent);color:#fff;text-decoration:none;
+  padding:.6rem 1.4rem;border-radius:var(--r-sm);
+  background:transparent;color:var(--accent);text-decoration:none;
+  border:1.5px solid var(--accent);
   transition:all .3s;
 }
-.nav-cta:hover{background:var(--accent-light);transform:translateY(-1px)}
+.nav-cta:hover{background:var(--accent);color:#fff;transform:translateY(-1px)}
 
 /* === BURGER === */
 .nav-burger{
@@ -496,7 +497,7 @@ footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:br
     <a href="#about">Обо мне</a>
     <a href="#education">Образование</a>
     <a href="#format">Стоимость</a>
-    <a href="#write" class="nav-cta">Написать</a>
+    <a href="#write" class="nav-cta">Познакомиться</a>
   </div>
   <button class="nav-burger" aria-label="Меню">
     <span></span><span></span><span></span>
