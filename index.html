@@ -290,7 +290,7 @@ section{
   max-width:700px;margin:0 auto;text-align:center;
 }
 .format-grid{
-  display:grid;grid-template-columns:1fr 1fr 1fr;gap:1.5rem;
+  display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;
   margin-top:2.5rem;
 }
 .format-card{
@@ -651,9 +651,14 @@ footer a{font-size:.75rem;color:var(--accent);text-decoration:none;word-break:br
     <p class="section-text" style="max-width:none;text-align:center;color:var(--fg-muted)" data-i18n="format.subtitle">Без обязательств</p>
     <div class="format-grid">
       <div class="format-card">
+        <div class="format-label" data-i18n="format.first">Первая встреча</div>
+        <div class="format-value" data-i18n="format.first.price">3 000 – 5 000 ₽ · 30 – 50 €</div>
+        <div class="format-note" data-i18n="format.first.note">50 мин · стоимость обсуждается</div>
+      </div>
+      <div class="format-card">
         <div class="format-label" data-i18n="format.session">Сессия</div>
-        <div class="format-value">30 €</div>
-        <div class="format-note" data-i18n="format.session.note">3 000 ₽ · 50 минут</div>
+        <div class="format-value" data-i18n="format.session.price">3 000 ₽ · 30 €</div>
+        <div class="format-note" data-i18n="format.session.note">50 минут</div>
       </div>
       <div class="format-card">
         <div class="format-label" data-i18n="format.online">Онлайн</div>
@@ -748,8 +753,12 @@ const T={
     'format.label':'Формат и стоимость',
     'format.title':'Первая встреча — чтобы понять, <em>подходит ли</em> вам этот формат',
     'format.subtitle':'Без обязательств',
+    'format.first':'Первая встреча',
+    'format.first.price':'3 000 – 5 000 ₽ · 30 – 50 €',
+    'format.first.note':'50 мин · стоимость обсуждается',
     'format.session':'Сессия',
-    'format.session.note':'3 000 ₽ · 50 минут',
+    'format.session.price':'3 000 ₽ · 30 €',
+    'format.session.note':'50 минут',
     'format.online':'Онлайн',
     'format.online.value':'Везде',
     'format.online.note':'kMeet · шифрование',
@@ -800,8 +809,12 @@ const T={
     'format.label':'Format et tarifs',
     'format.title':'La première séance — pour voir si ce format <em>vous convient</em>',
     'format.subtitle':'Sans engagement',
+    'format.first':'Première séance',
+    'format.first.price':'30 – 50 €',
+    'format.first.note':'50 min · tarif adapté à votre situation',
     'format.session':'Séance',
-    'format.session.note':'3 000 ₽ · 50 minutes',
+    'format.session.price':'30 €',
+    'format.session.note':'50 minutes',
     'format.online':'En ligne',
     'format.online.value':'Partout',
     'format.online.note':'kMeet · chiffrement',
@@ -852,8 +865,12 @@ const T={
     'format.label':'Fees',
     'format.title':'The first session — to see if this is right for you',
     'format.subtitle':'No commitment',
-    'format.session':'First session',
-    'format.session.note':'30 € · 3 000 ₽ · 50 min',
+    'format.first':'First session',
+    'format.first.price':'30 – 50 €',
+    'format.first.note':'50 min · sliding scale',
+    'format.session':'Session',
+    'format.session.price':'30 €',
+    'format.session.note':'50 min',
     'format.online':'Online',
     'format.online.value':'kMeet · encrypted',
     'format.online.note':'Russia, France, worldwide',
